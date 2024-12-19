@@ -1,0 +1,62 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.card {
+  position: relative;
+  width: 288px;
+  height: 174px;
+  border-radius: 32px;
+  color: white;
+  overflow: clip;
+
+  .background: {
+  }
+
+  .color {
+    position: absolute;
+    background: #00aebe;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color;
+  }
+
+  .logo {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  .logo-mir {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .info {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .number {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+  }
+}
